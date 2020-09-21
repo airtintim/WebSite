@@ -25,7 +25,7 @@
 	document.getElementById("acu").innerHTML = v;
 	function calculate()
 	{
-		var v = document.getElementById("acu").value + document.getElementById("v1").value + document.getElementById("v2").value;
+		var v = parseInt(document.getElementById("acu").innerHTML) + parseInt(document.getElementById("v1").value) + parseInt(document.getElementById("v2").value);
 		document.getElementById("submit").value = v;
 	}
 </script>
