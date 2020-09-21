@@ -10,9 +10,9 @@
 			var sParameterName = sURLVariables[i].split('=');
 			if (sParameterName[0] == sParam) 
 			{
-				return sParameterName[1];
+				return parseInt(sParameterName[1]);
 			}
 		}
 	}
-	document.getElementById("acu").value = GetURLParameter('result');
+	document.getElementById("acu").innerHTML = GetURLParameter('result');
 </script>
