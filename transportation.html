@@ -21,9 +21,11 @@
 			}
 		}
 	}
-	document.getElementById("acu").value = new Number(GetURLParameter('v1'));
+	var v = GetURLParameter('v1') + GetURLParameter('v2');
+	document.getElementById("acu").value = v;
 	function calculate()
 	{
-		document.getElementById("submit").value = document.getElementById("acu").value + document.getElementById("v1").value + document.getElementById("v2").value;
+		var v = document.getElementById("acu").value + document.getElementById("v1").value + document.getElementById("v2").value;
+		document.getElementById("submit").value = v;
 	}
 </script>
