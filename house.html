@@ -1,0 +1,190 @@
+<form action="/WebSite/transportation.html" method="post">
+<table class="gentable">
+    <tbody><tr>
+        <td class="gencell"><span id="ctl05_chsHouse_Label1">Electricity:</span></td>
+        <td class="gencell">
+            <table class="layouttable">
+                <tbody><tr>
+                    <td>
+                        <input name="ctl05$chsHouse$txtElecUsage" type="text" maxlength="8" id="ctl05_chsHouse_txtElecUsage" class="numberbox">
+                    </td>
+                    <td>
+                        
+                        <div id="ctl05_chsHouse_pnlElecFactor">
+	
+                            <span id="ctl05_chsHouse_lblElecFactor1">kWh at a factor of</span>
+                            <input name="ctl05$chsHouse$txtElecFactor" type="text" maxlength="8" id="ctl05_chsHouse_txtElecFactor" class="numberbox">
+                            <span id="ctl05_chsHouse_lblElecFactor2">kgCO<span class="co2">2</span>e/kWh</span>
+                            <input type="submit" name="ctl05$chsHouse$btnElecFactor" value="what's this?" onclick="alert('Please enter the electricity factor for your country. You may be able to find this on your electricity bill. If you do not have this data you can use 0.5 kgCO2e/kWh as a rough approximation. For accurate results, you can purchase IEA factors from our website.'); return false;" id="ctl05_chsHouse_btnElecFactor" class="linkbutton">
+                        
+</div>
+                    </td>
+                    <td>
+                        <span id="ctl05_chsHouse_rgvElecUsage" style="visibility:hidden;">*</span>
+                        <span id="ctl05_chsHouse_cuvElecBoth" style="visibility:hidden;">*</span>
+                        <span id="ctl05_chsHouse_rgvElecFactor" style="visibility:hidden;">*</span>
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+    <tr>
+        <td class="gencell"><span id="ctl05_chsHouse_Label2">Natural gas:</span></td>
+        <td class="gencell">
+            <table class="layouttable">
+                <tbody><tr>
+                    <td>
+                        <input name="ctl05$chsHouse$txtGasUsage" type="text" maxlength="8" id="ctl05_chsHouse_txtGasUsage" class="numberbox">
+                    </td>
+                    <td>
+                        <select name="ctl05$chsHouse$ddlGasUsageUnit" id="ctl05_chsHouse_ddlGasUsageUnit" class="mediumbox">
+	<option selected="selected" value="0.18387">kWh</option>
+	<option value="5.388698">therms</option>
+
+</select>
+                    </td>
+                    <td>
+                        <span id="ctl05_chsHouse_rgvGasUsage" style="visibility:hidden;">*</span>
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+    <tr>
+        <td class="gencell"><span id="ctl05_chsHouse_Label3">Heating oil:</span></td>
+        <td class="gencell">
+            <table class="layouttable">
+                <tbody><tr>
+                    <td>
+                        <input name="ctl05$chsHouse$txtOilUsage" type="text" maxlength="8" id="ctl05_chsHouse_txtOilUsage" class="numberbox">
+                    </td>
+                    <td>
+                        <select name="ctl05$chsHouse$ddlOilUsageUnit" id="ctl05_chsHouse_ddlOilUsageUnit" class="mediumbox">
+	<option value="0.24666">kWh</option>
+	<option selected="selected" value="2.54039">litres</option>
+	<option value="3165.32">metric tons</option>
+	<option value="9.61642">US gallons</option>
+
+</select>
+                    </td>
+                    <td>
+                        <span id="ctl05_chsHouse_rgvOilUsage" style="visibility:hidden;">*</span>
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+    <tr>
+        <td class="gencell"><span id="ctl05_chsHouse_Label4">Coal:</span></td>
+        <td class="gencell">
+            <table class="layouttable">
+                <tbody><tr>
+                    <td>
+                        <input name="ctl05$chsHouse$txtCoalUsage" type="text" maxlength="8" id="ctl05_chsHouse_txtCoalUsage" class="numberbox">
+                    </td>
+                    <td>
+                        <select name="ctl05$chsHouse$ddlCoalUsageUnit" id="ctl05_chsHouse_ddlCoalUsageUnit" class="mediumbox">
+	<option value="0.34462">kWh</option>
+	<option selected="selected" value="2883.26">metric tons</option>
+	<option value="28.8326">x 10kg bags</option>
+	<option value="57.6652">x 20kg bags</option>
+	<option value="72.0815">x 25kg bags</option>
+	<option value="144.163">x 50kg bags</option>
+
+</select>
+                    </td>
+                    <td>
+                        <span id="ctl05_chsHouse_rgvCoalUsage" style="visibility:hidden;">*</span>
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+    <tr>
+        <td class="gencell"><span id="ctl05_chsHouse_Label5">LPG:</span></td>
+        <td class="gencell">
+            <table class="layouttable">
+                <tbody><tr>
+                    <td>
+                        <input name="ctl05$chsHouse$txtLpgUsage" type="text" maxlength="8" id="ctl05_chsHouse_txtLpgUsage" class="numberbox">
+                    </td>
+                    <td>
+                        <select name="ctl05$chsHouse$ddlLpgUsageUnit" id="ctl05_chsHouse_ddlLpgUsageUnit" class="mediumbox">
+	<option value="0.21448">kWh</option>
+	<option selected="selected" value="1.55537">litres</option>
+	<option value="6.28579">therms</option>
+	<option value="5.88772">US gallons</option>
+
+</select>
+                    </td>
+                    <td>
+                        <span id="ctl05_chsHouse_rgvLpgUsage" style="visibility:hidden;">*</span>
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+    <tr>
+        <td class="gencell"><span id="ctl05_chsHouse_Label6">Propane:</span></td>
+        <td class="gencell">
+            <table class="layouttable">
+                <tbody><tr>
+                    <td>
+                        <input name="ctl05$chsHouse$txtPropaneUsage" type="text" maxlength="8" id="ctl05_chsHouse_txtPropaneUsage" class="numberbox">
+                    </td>
+                    <td>
+                        <select name="ctl05$chsHouse$ddlPropaneUsageUnit" id="ctl05_chsHouse_ddlPropaneUsageUnit" class="mediumbox">
+	<option selected="selected" value="1.55537">litres</option>
+	<option value="5.88772">US gallons</option>
+
+</select>
+                    </td>
+                    <td>
+                        <span id="ctl05_chsHouse_rgvPropaneUsage" style="visibility:hidden;">*</span>
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+    <tr>
+        <td class="gencell"><span id="ctl05_chsHouse_Label7">Wooden pellets:</span></td>
+        <td class="gencell">
+            <table class="layouttable">
+                <tbody><tr>
+                    <td>
+                        <input name="ctl05$chsHouse$txtWoodUsage" type="text" maxlength="8" id="ctl05_chsHouse_txtWoodUsage" class="numberbox">
+                    </td>
+                    <td>
+                        <select name="ctl05$chsHouse$ddlWoodUsageUnit" id="ctl05_chsHouse_ddlWoodUsageUnit" class="mediumbox">
+	<option selected="selected" value="72.29731">metric tons</option>
+
+</select>
+                    </td>
+                    <td>
+                        <span id="ctl05_chsHouse_rgvWoodUsage" style="visibility:hidden;">*</span>
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+    <tr>
+        <td class="gencell"></td>
+        <td class="gencell">
+            <table class="layouttable">
+                <tbody><tr>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+<input type="submit" value="Transportation">
+</form>
