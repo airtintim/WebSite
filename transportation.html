@@ -1,11 +1,11 @@
-<form action="/WebSite/next.html" method="get">
+<form action="/WebSite/result.html" method="get">
   <label>Accumulation:</label>
   <label id="acu"></label><br><br>
   <label>Value 1:</label>
   <input type="number" id="v1" name="v1"><br><br>
   <label>Value 2:</label>
   <input type="number" id="v2" name="v2"><br><br>
-<input type="submit" value="Next">
+<input type="submit" value="Result" onclick="calculate()" name="result" id="submit">
 </form>
 <script>
 	function GetURLParameter(sParam)
@@ -17,9 +17,13 @@
 			var sParameterName = sURLVariables[i].split('=');
 			if (sParameterName[0] == sParam) 
 			{
-				return parseInt(sParameterName[1]);
+				return sParameterName[1];
 			}
 		}
 	}
-	document.getElementById("acu").value = GetURLParameter('v1') + GetURLParameter('v2');
+	document.getElementById("acu").value = new Number(GetURLParameter('v1'));
+	function calculate()
+	{
+		document.getElementById("submit").value = document.getElementById("acu").value + document.getElementById("v1").value + document.getElementById("v2").value;
+	}
 </script>
