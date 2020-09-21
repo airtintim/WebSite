@@ -1,3 +1,12 @@
+<form action="/WebSite/next.html" method="get">
+  <label>Accumulation:</label>
+  <label id="acu"></label><br><br>
+  <label>Value 1:</label>
+  <input type="number" id="v1" name="v1"><br><br>
+  <label>Value 2:</label>
+  <input type="number" id="v2" name="v2"><br><br>
+<input type="submit" value="Next">
+</form>
 <script>
 	function GetURLParameter(sParam)
 	{
@@ -12,14 +21,5 @@
 			}
 		}
 	}
-	document.getElementById("acu").innerHTML = GetURLParameter('v1');
+	document.getElementById("acu").value = GetURLParameter('v1');
 </script>
-<form action="/WebSite/next.html" method="get">
-  <label>Accumulation:</label>
-  <label id="acu"></label><br><br>
-  <label>Value 1:</label>
-  <input type="number" id="v1" name="v1"><br><br>
-  <label>Value 2:</label>
-  <input type="number" id="v2" name="v2"><br><br>
-<input type="submit" value="Next">
-</form>
